@@ -1,0 +1,27 @@
+.Track {
+	display: grid;
+	grid-template-columns: 0.1fr 1.5fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		". .";
+	cursor: pointer;
+	
+	&__Details {	
+		h3 {
+			margin: 0;
+		}	
+		p {
+			margin: 3px 0;
+			span {
+				&:first-child {
+					font-weight: 600;
+				}
+			}
+		}
+		img {
+
+		}
+	}
+}

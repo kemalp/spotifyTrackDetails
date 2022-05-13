@@ -1,0 +1,23 @@
+@import './colours.scss';
+
+body {
+	margin: 0;
+	//background: $light-black;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.appContainer {
+	width: 90vw;
+	height: 90vh;
+	margin: 5vh 5vw;
+	padding: 2vh 2vw;
+	//background: $black;
+}
