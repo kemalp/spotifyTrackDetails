@@ -41,6 +41,10 @@ const TrackResults = () => {
 			{
 				name: 'Loudness',
 				value: trackData.track.loudness
+			},
+			{
+				name: 'Mode',
+				value: trackData.track.mode
 			}
 		]
 		return trackDetailsMap.map((detail, i) => (
