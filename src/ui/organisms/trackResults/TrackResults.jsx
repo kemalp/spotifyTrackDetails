@@ -53,14 +53,14 @@ const TrackResults = () => {
 	}
 
 	return (
-		<div>
+		<>
 			{
 				trackData &&
 				<>
 				{renderTrackDetails()}
 				</>
 			}
-		</div>
+		</>
 	)
 }
 

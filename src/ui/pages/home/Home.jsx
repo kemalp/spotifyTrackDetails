@@ -81,8 +81,8 @@ function Home() {
 		<div className="Home">
 			{/* <button onClick={logout}>Logout</button> */}
 			<SearchBar/>
-			<div className="ResultsContainer">
-				<div className="TrackListResults">
+			<div className="ContentWrapper">
+				<div className="SearchResultsContainer">
 					<SearchResults />
 				</div>
 				<div className="TrackResultsContainer">
