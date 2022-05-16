@@ -18,17 +18,14 @@ const Track = props => {
 
 	return (
 		<div className="Track" onClick={() => changeTrackDetails(props.trackId)}>
-			<Image src={props.image} alt={props.trackAlbum} />
-			<div className='Track__Details'>
+			<div className="Image">
+				<Image src={props.image} alt={props.trackAlbum} />
+			</div>
+			<div className="Track__Details">
 				<h3>{props.trackTitle}</h3>
-				<p>
-					<span>Album</span>
-					<span>{props.trackAlbum}</span>
-				</p>
-				<p>
-					<span>Artist</span>
-					<span>{props.trackArtist}</span>
-				</p>
+				<div className="Artist">
+					{props.trackArtist}
+				</div>
 			</div>
 		</div>
 	)

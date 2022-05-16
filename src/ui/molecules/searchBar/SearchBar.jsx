@@ -9,6 +9,9 @@ import { searchResultsAsync } from '../../../redux/searchResultsSlice'
 import Button from '../../atoms/button/Button'
 import Input from '../../atoms/input/Input'
 
+//Imports
+import { FaSearch } from 'react-icons/fa'
+
 const SearchBar = props => {
 
 	//Redux Hooks
@@ -23,7 +26,7 @@ const SearchBar = props => {
 
 	return (
 		<div className="SearchBar">
-			<Input value={searchTerm} placeholder="Search Track or Artist on Spotify" onChange={e => setSearchTerm(e.target.value)} />
+			<Input value={searchTerm} icon={<FaSearch />} placeholder="Search Track or Artist on Spotify" onChange={e => setSearchTerm(e.target.value)} />
 			<Button onClick={searchValue}>Search</Button>
 		</div>
 	)

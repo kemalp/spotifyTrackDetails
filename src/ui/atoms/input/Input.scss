@@ -1,0 +1,29 @@
+.Input {
+    width: 100%;
+    height: 3rem;
+
+    input {
+        width: 100%;
+        height: 3rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    &__Icon {
+        position: relative;
+        
+        input {
+            padding-left: 3.5rem;
+        }
+
+        svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            position: absolute;
+            top: 0.75rem;
+            left: 1rem;
+        }
+    }
+}

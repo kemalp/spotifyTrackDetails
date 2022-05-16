@@ -2,7 +2,7 @@
 
 body {
 	margin: 0;
-	//background: $light-black;
+	background: $black;
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -14,6 +14,18 @@ body {
 	box-sizing: border-box;
 }
 
+input {
+
+	&:focus {
+		outline: none;
+	}
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
 .appContainer {
 	width: 90vw;
 	height: 90vh;
@@ -21,3 +33,4 @@ body {
 	padding: 2vh 2vw;
 	//background: $black;
 }
+
