@@ -1,6 +1,23 @@
 .TrackDetails {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: none;
+    row-gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
     color: rgba(255, 255, 255, 1);
+    background: rgba(24, 24, 24, 1);
+            
+    div {
+        &:nth-child(2) {
+            color: rgba(101, 211, 110, 1);
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
+
+    &:hover {
+        background: rgba(40, 40, 40, 1);
+    }
 }

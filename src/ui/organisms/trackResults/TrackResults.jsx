@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import TrackDetails from '../../molecules/trackDetails/TrackDetails'
 
+import returnConversionValue from "../../../utils/keyConverter"
 
 const TrackResults = () => {
 
@@ -16,10 +17,24 @@ const TrackResults = () => {
 	}, [])
 
 	
+	
 	const renderTrackDetails = () => {
+
 		const trackDetailsMap = [
 			{
-				name: 'Key',
+				name: 'Camelot Key',
+				value: returnConversionValue(trackData.track.mode, trackData.track.key)[0].camelotKey
+			},
+			{
+				name: 'Open Key',
+				value: returnConversionValue(trackData.track.mode, trackData.track.key)[0].openKey
+			},
+			{
+				name: 'Music Key',
+				value: returnConversionValue(trackData.track.mode, trackData.track.key)[0].musicKey
+			},
+			{
+				name: 'Pitch Class',
 				value: trackData.track.key
 			},
 			{
@@ -36,7 +51,7 @@ const TrackResults = () => {
 			},
 			{
 				name: 'Duration',
-				value: trackData.track.duration
+				value: Math.round((trackData.track.duration / 60) * 100) / 100
 			},
 			{
 				name: 'Loudness',
@@ -53,14 +68,15 @@ const TrackResults = () => {
 	}
 
 	return (
-		<>
+		<div className="TrackResults column">
+		
 			{
 				trackData &&
 				<>
 				{renderTrackDetails()}
 				</>
 			}
-		</>
+		</div>
 	)
 }
 

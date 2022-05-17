@@ -1,7 +1,8 @@
 import "./TrackDetails.scss"
 
-const TrackDetails = props => {
 
+
+const TrackDetails = props => {
 
 	return (
 		<div className="TrackDetails">
