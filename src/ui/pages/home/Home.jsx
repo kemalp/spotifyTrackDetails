@@ -30,65 +30,28 @@ function Home() {
 		setToken(token)
 	}, [])
 
-/*	const logout = () => {
-		setToken('')
-		window.localStorage.removeItem('')
-	}
- 	const [searchKey, setSearchKey] = useState('')
-	const [artists, setArtists] = useState([])
-	const [tracks, setTracks] = useState([])
-
-	const searchArtist = async e => {
-		e.preventDefault()
-		const { data } = await spotifyAPI.get(
-			`${appConfig.spotify.search.searchItem}`,
-			{
-				headers: {
-					Authorization: `Bearer ${token}`
-				},
-				params: {
-					q: searchKey,
-					type: 'track,artist'
-				}
-			}
-		)
-		setArtists(data.artists.items)
-		setTracks(data.tracks.items)
-	}
-
-	const renderArtist = () => {
-		return artists.map(artist => (
-			<div key={artist.id}>
-				{ {artist.images.length ? (
-					<img width={'100%'} src={artist.images[0].url} alt='' />
-				) : (
-					<div>No Image</div>
-				)} }
-				{artist.name}
-			</div>
-		))
-	}
-
-	const renderTracks = () => {
-		return tracks.map(track => (
-			<div key={track.id}>
-				{track.name}
-			</div>
-		))
-	} */
-
 	return (
 		<div className="Home">
 			{/* <button onClick={logout}>Logout</button> */}
-			<SearchBar/>
-			<div className="ContentWrapper">
-				<div className="SearchResultsContainer">
-					<SearchResults />
+			<header>
+				<div className="container">
+					<SearchBar/>
 				</div>
-				<div className="TrackResultsContainer">
-					<TrackResults />
+			</header>
+			
+			<section>
+				<div className="container">
+					<div className="ContentWrapper">
+						<div className="SearchResultsContainer">
+							<SearchResults />
+						</div>
+						<div className="TrackResultsContainer">
+							<TrackResults />
+						</div>
+					</div>
 				</div>
-			</div>
+			</section>
+
 			
 			{/* {renderArtist()}
 			{renderTracks()} */}

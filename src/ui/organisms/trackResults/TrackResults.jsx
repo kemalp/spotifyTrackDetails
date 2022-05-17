@@ -1,7 +1,7 @@
 import "./TrackResults.scss"
 
 //React and dependencies
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import TrackDetails from '../../molecules/trackDetails/TrackDetails'
 
@@ -13,7 +13,7 @@ const TrackResults = () => {
 
 	// Page Load
 	useEffect(() => {
-
+		
 	}, [])
 
 	
@@ -68,10 +68,10 @@ const TrackResults = () => {
 	}
 
 	return (
-		<div className="TrackResults column">
+		<div className="TrackResults">
 		
 			{
-				trackData &&
+				trackData.track.key &&
 				<>
 				{renderTrackDetails()}
 				</>

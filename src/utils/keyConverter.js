@@ -135,15 +135,15 @@ const keyConversionList = [
         mode: 1,
         pitchClass: 7,
         camelotKey: '6A',
-        openKey: '',
-        musicKey: ''  
+        openKey: '11m',
+        musicKey: 'Gm'  
     },
     { 
         mode: 1,
         pitchClass: 8,
         camelotKey: '1A',
-        openKey: '11m',
-        musicKey: 'Gm'  
+        openKey: '6m',
+        musicKey: 'G#m'  
     },
     { 
         mode: 1,

@@ -1,10 +1,29 @@
 .Home {
-    .ContentWrapper {
+	header {
+		height: 15vh;
+		background: rgba(101, 211, 110, 1);
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas:
-		  ". .";
-		column-gap: 1rem;;
+		justify-content: center;
+		align-content: center;
+	}
+	section {
+		height: 80vh;
+		display: grid;
+		justify-content: center;
+		padding-top: 5vh;
+
+	    .ContentWrapper {
+			height: 70vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr;
+			grid-template-areas:
+			  ". .";
+			column-gap: 1rem;
+	
+			.SearchResultsContainer {
+				overflow: scroll;
+			}
+		}
 	}
 }

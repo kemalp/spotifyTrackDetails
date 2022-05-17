@@ -17,6 +17,7 @@ body {
 }
 
 input {
+	font-family: 'Raleway', sans-serif;
 
 	&:focus {
 		outline: none;
@@ -29,10 +30,8 @@ h1, h2, h3 {
 }
 
 .appContainer {
-	width: 90vw;
-	height: 90vh;
-	margin: 5vh 5vw;
-	padding: 2vh 2vw;
-	//background: $black;
 }
 
+.container {
+	width: 90vw;
+}
