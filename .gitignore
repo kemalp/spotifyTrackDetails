@@ -352,6 +352,5 @@ MigrationBackup/
 .DS_Store
 .history
 .idea
-public/
 build/
 .git
