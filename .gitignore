@@ -353,3 +353,4 @@ MigrationBackup/
 .history
 .idea
 public/
+.git
